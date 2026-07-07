@@ -165,7 +165,7 @@ float calcularES(void) {
         scanf("%f", &pPD);
 
         if (pABP < 0 || pPD < 0 || pABP > 10 || pPD > 10 ||
-            pABP + pPD < 9.99 || pABP + pPD > 10.01) {
+            pABP + pPD < 10 || pABP + pPD > 10) {
             printf("Error: los ponderados deben estar entre 0 y 10, y deben sumar 10.\n");
         }
 
