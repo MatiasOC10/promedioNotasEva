@@ -170,7 +170,7 @@ float calcularES(void) {
         }
 
     } while (pABP < 0 || pPD < 0 || pABP > 10 || pPD > 10 ||
-             pABP + pPD < 9.99 || pABP + pPD > 10.01);
+             pABP + pPD < 10 || pABP + pPD > 10);
 
     pABP = pABP / 10;
     pPD = pPD / 10;
@@ -191,6 +191,6 @@ void determinarEstado(float promedioGeneral) {
     } else if (promedioGeneral >= 2.5) {
         printf("Estado final: Supletorio\n");
     } else {
-        printf("Estado final: Desaprobado\n");
+        printf("Estado final: Reprobado\n");
     }
 }
